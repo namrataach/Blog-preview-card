@@ -1,0 +1,111 @@
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%); 
+    --grey: hsl(0, 0%, 50%) ;
+    --black: hsl(0, 0%, 7%);
+}
+body{
+    font-family: Figtree;
+    background-color: var(--yellow);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: fit-content;
+    margin: auto;
+    width: 400px;
+    border-radius: 15px;
+    padding: 25px;
+    inset: 0;
+    position: fixed;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0px 5px black;
+    width: min-content;
+}
+.content img{
+    border-radius: 15px;
+}
+.p_btn{
+    margin-bottom: 0;
+}
+button{
+    background: var(--yellow);
+    border: 1px solid var(--yellow);
+    padding: 5px 12px;
+    font-weight: 800;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+.date{
+    font-size: 14px;
+    font-weight: 500;
+}
+.description{
+    color: var(--grey);
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 26px;
+}
+h3{
+    margin-top: 2px;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+.img_and_name{
+    display: flex;
+    margin-top: 5px;
+}
+.img_and_name p{
+    margin: auto 10px;
+    font-size: 16px;
+    font-weight: 800;
+}
+.img_and_name .img_two{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+@media screen and (max-width:480px){
+    .content{
+        height: 300px;
+        width: 200px;
+        padding: 15px;
+        box-shadow: 2px 2px 0px 2px black;
+    }
+    .p_btn{
+        margin-top: 8px;
+    }
+    button{
+        padding: 3px 8px;
+        margin-top: 0px;
+        font-size: 10px;
+    }
+    .date{
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    h3{
+        font-size: 14px;
+    }
+    .description{
+        margin-top: 0;
+        font-size: 12px;
+        line-height: unset !important;
+    }
+    .img_and_name{
+        margin-top: 0;
+    }
+    .img_and_name .img_two{
+        height: 20px;
+        width: 20px;
+    }
+    .img_and_name p{
+        margin: auto 5px;
+        font-size: 10px;
+    }
+
+}
